@@ -1,5 +1,5 @@
 <template>
   <q-btn color="primary" class="full-width q-mt-md">
-    <slot>Speichern</slot>
+    <slot>Save</slot>
   </q-btn>
 </template>

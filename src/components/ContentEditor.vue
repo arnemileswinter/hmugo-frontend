@@ -53,7 +53,7 @@
     <q-btn-group spread class="q-mt-md">
       <q-btn @click="addTxt">Text</q-btn>
       <oder />
-      <q-btn @click="addImg">Bild</q-btn>
+      <q-btn @click="addImg">Image</q-btn>
     </q-btn-group>
   </div>
 </template>

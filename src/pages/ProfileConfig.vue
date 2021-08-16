@@ -7,7 +7,7 @@
           :multiple="false"
           :loading="changingProfileImage"
           borderless
-          hint="Hier klicken um dein Bild zu ändern."
+          hint="Click here to change your profile image."
           :input-style="{ display: 'none' }"
           @update:model-value="profileImageChanged"
         >
@@ -18,9 +18,9 @@
           </template>
         </q-file>
       </div>
-      <q-input v-model="name" type="text" dense hint="Das ist dein Profilname." />
-      <q-input v-model="insta" type="text" dense hint="Das ist dein Instagram-Name." />
-      <h5 class="text-center">Biographie</h5>
+      <q-input v-model="name" type="text" dense hint="Your profile name." />
+      <q-input v-model="insta" type="text" dense hint="Your instagram handle." />
+      <h5 class="text-center">Biography</h5>
       <content-editor v-model="bio" class="q-mt-md" />
       <save-or-discard-buttons
         @click:save="submitProfileUpdate"
@@ -86,7 +86,7 @@ const submitProfileUpdate = () => {
       bio: bio.value,
     })
     .then(() => {
-      q.notify({ type: "positive", message: "Gespeichert." });
+      q.notify({ type: "positive", message: "Saved." });
     })
     .catch((e) => {
       profileFailed.value = true;

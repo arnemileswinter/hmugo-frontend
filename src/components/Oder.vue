@@ -1,5 +1,5 @@
 <template>
-  <div class="oder">Oder</div>
+  <div class="oder">Or</div>
 </template>
 
 <style lang="scss" scoped>

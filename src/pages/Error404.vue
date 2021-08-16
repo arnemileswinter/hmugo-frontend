@@ -3,7 +3,7 @@
     <div>
       <div style="font-size: 30vh">404</div>
 
-      <div class="text-h2" style="opacity: 0.4">Seite nicht gefunden.</div>
+      <div class="text-h2" style="opacity: 0.4">Page not found.</div>
 
       <q-btn
         class="q-mt-xl"
@@ -11,7 +11,7 @@
         text-color="primary"
         unelevated
         to="/"
-        label="Zur Startseite"
+        label="Take me home"
         no-caps
       />
     </div>

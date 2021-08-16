@@ -5,7 +5,7 @@
       class="full-width q-mb-md"
       @click="router.push('/posts/create')"
     >
-      Neuer Post
+      New Post
     </q-btn>
     <div :style="{ minHeight: '500px' }">
       <q-list bordered separator>

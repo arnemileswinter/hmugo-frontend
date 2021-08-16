@@ -106,7 +106,7 @@ const savePost = (postID) => {
     content: content.value,
   })
     .then((r) => {
-      q.notify({ type: "positive", message: "Gespeichert." });
+      q.notify({ type: "positive", message: "Saved." });
       if (isNewPost.value) {
         router.replace(`/posts/${r.data.id}`);
       }

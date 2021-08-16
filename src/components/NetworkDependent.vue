@@ -1,6 +1,10 @@
 <template>
   <div>
-    <div v-if="failed">Da ist was schief gelaufen. Frag mal Arne, sorry :)</div>
+    <div v-if="failed">
+      Something went wrong. 
+      Feel free to file a bugreport at 
+      <a target="_blank" href="https://github.com/arnemileswinter/hmugo/issues">GitHub</a>.
+      </div>
     <slot />
     <q-inner-loading :showing="pending" />
   </div>

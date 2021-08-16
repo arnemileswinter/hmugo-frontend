@@ -3,30 +3,30 @@
     <q-input
       type="text"
       :model-value="title"
-      label="Titel"
-      placeholder="Mein neuer Post"
-      :rules="[(val) => val.length >= 3 || 'Muss mindestens 3 Zeichen lang sein.']"
+      label="Title"
+      placeholder="My new post"
+      :rules="[(val) => val.length >= 3 || 'Must be at least 3 characters.']"
       @update:model-value="(t) => emit('update:title', t)"
     />
     <csv-input
       v-model="cTags"
-      label="Post-Tags, kommagetrennt"
-      the-placeholder="Cooler Tag 1, Noch ein cooler Tag"
+      label="Post-Tags, separated by commas"
+      the-placeholder="cool tag 1, another tag"
     />
     <csv-input
       v-model="cCats"
-      label="Post-Kategorien, kommagetrennt"
-      the-placeholder="Kategorie 1, Kategorie 2, ..."
+      label="Post-Categories, separated by commas"
+      the-placeholder="Categorie 1, Categorie 2, ..."
     />
     <div class="q-gutter-md flex flex-center q-my-md">
       <q-file
         accept="image/*"
         :multiple="false"
         borderless
-        hint="Hier klicken um das Post-Titelbild zu ändern."
+        hint="Click here to change the post's cover image."
         :input-style="{ display: 'none' }"
         :error="cover.length === 0"
-        error-message="Ein Post muss ein Cover-Bild haben."
+        error-message="Your post must have a cover-image."
         @update:model-value="coverChanged"
       >
         <template #default>

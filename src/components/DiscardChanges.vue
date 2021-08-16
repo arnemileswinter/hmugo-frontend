@@ -7,7 +7,7 @@
     :loading="pending"
     @click="discard"
   >
-    Änderungen verwerfen
+    Discard Changes
   </q-btn>
 </template>
 <script setup>

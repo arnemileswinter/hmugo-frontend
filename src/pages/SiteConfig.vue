@@ -6,25 +6,25 @@
           v-model="header"
           filled
           label="Header"
-          hint="Das ist der Titel, der auf der Hauptseite fettgedruckt ist. Der sollte eher kurz sein."
+          hint="This title will be printed bold on the main page. Keep it short."
         />
         <q-input
           v-model="motto"
           filled
           type="textarea"
           label="Motto"
-          hint="Das ist der Untertitel, der darf ein bisschen Länger sein."
+          hint="Your blog's motto may be a bit longer."
         />
         <q-input
           v-model="footerText"
           filled
           type="textarea"
-          hint="Dieser Text wird ganz unten auf deiner Seite angezeigt. Hier kann rechtlicher Krams rein."
+          hint="This is the bottom text of your page. A nice place for legal disclaimers etc."
         />
         <q-input
           v-model="baseURL"
           filled
-          hint="Die internetadresse deines Blogs. Falls du deine Seite nicht selbst aufgesetzt hast, solltest du diese nicht ändern."
+          hint="Your blogs public internet adress. If you have not set up your site yourself, ignore this."
         />
       </div>
       <save-or-discard-buttons @click:save="saveChanges" @click:discard="fetchFields" />
@@ -75,7 +75,7 @@ const saveChanges = () => {
       baseURL: baseURL.value,
     })
     .then(() => {
-      q.notify({ type: "positive", message: "Gespeichert." });
+      q.notify({ type: "positive", message: "Saved." });
     })
     .catch((e) => {
       console.err(e);

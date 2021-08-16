@@ -2,12 +2,12 @@
   <div class="row save-or-discard">
     <div class="col col-sm-2 col-xs-12">
       <discard-button @click="emit('click:discard')">
-        <slot name="discard"> Verwerfen </slot>
+        <slot name="discard"> </slot>
       </discard-button>
     </div>
     <div class="col col-sm-10 col-xs-12">
       <save-button @click="emit('click:save')">
-        <slot name="save"> Speichern </slot>
+        <slot name="save"> </slot>
       </save-button>
     </div>
   </div>

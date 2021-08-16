@@ -6,7 +6,7 @@
     :loading="pending"
     @click="publish"
   >
-    Veröffentlichen
+    Publish
   </q-btn>
 </template>
 <script setup>

@@ -26,9 +26,9 @@
       class="bg-grey-1"
     >
       <q-list>
-        <q-item-label header class="text-grey-8">Verwaltung</q-item-label>
-        <q-item clickable to="/config">Seiteneinstellungen</q-item>
-        <q-item clickable to="/profile">Profil</q-item>
+        <q-item-label header class="text-grey-8">Administration</q-item-label>
+        <q-item clickable to="/config">Site settings</q-item>
+        <q-item clickable to="/profile">Profile</q-item>
         <q-item clickable to="/posts">Posts</q-item>
         <q-separator />
         <q-item><discard-changes /></q-item>
