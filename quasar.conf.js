@@ -146,9 +146,9 @@ module.exports = configure(function (ctx) {
       },
 
       manifest: {
-        name: `Vyntar40k-CMS`,
-        short_name: `Vyntar40k-CMS`,
-        description: `Gui for the vyntar40k.art cms`,
+        name: `Hmugo`,
+        short_name: `Hmugo`,
+        description: `Opinionated gui for managing Hugo sites.`,
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
